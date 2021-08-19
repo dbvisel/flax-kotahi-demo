@@ -1,0 +1,17 @@
+{
+  "name": "flax-kotahi-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+		"start": "npx @11ty/eleventy --serve",
+		"build": "npx @11ty/eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Dan Visel <dbvisel@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
