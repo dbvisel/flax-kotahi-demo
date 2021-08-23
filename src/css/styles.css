@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Concourse OT";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-display: auto;
+  src: url("../fonts/concourse_ot_2_thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Concourse OT";
+  font-style: italic;
+  font-weight: normal;
+  font-stretch: normal;
+  font-display: auto;
+  src: url("../fonts/concourse_ot_2_thin_italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Concourse OT";
+  font-style: normal;
+  font-weight: bold;
+  font-stretch: normal;
+  font-display: auto;
+  src: url("../fonts/concourse_ot_4_medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Concourse OT";
+  font-style: italic;
+  font-weight: bold;
+  font-stretch: normal;
+  font-display: auto;
+  src: url("../fonts/concourse_ot_4_medium_italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Century Supra";
+  src: url("../fonts/century_supra_ot_b_regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Century Supra";
+  src: url("../fonts/century_supra_ot_b_italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Century Supra";
+  src: url("../fonts/century_supra_ot_b_bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Century Supra";
+  src: url("../fonts/century_supra_ot_b_bold_italic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Century Supra Caps";
+  src: url("../fonts/century_supra_b_caps_regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Century Supra Caps";
+  src: url("../fonts/century_supra_b_caps_bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root,
+html,
+body {
+  --basicFontStack: "Century Supra", "Georgia", serif;
+  --headerFontStack: "Concourse OT", "Inter UI", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  -webkit-overflow-scrolling: touch;
+  --outsidePadding: 25px;
+  --insidePadding: 10px;
+  --background: #ccc;
+  --white: white;
+  --black: #111111;
+  --highlight: orange;
+  background-color: var(--background);
+  color: var(--black);
+  font-family: var(--headerFontStack);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: var(--outsidePadding);
+}
+
+p,
+blockquote,
+ul,
+ol {
+  font-family: var(--basicFontStack);
+}
+
+a {
+  color: var(--highlight);
+}
+
+ul,
+ol {
+  margin: var(--insidePadding) 0;
+}
+
+header,
+footer,
+main {
+  background-color: var(--white);
+  padding: var(--insidePadding);
+  border-radius: var(--insidePadding);
+}
+
+header {
+  margin-bottom: var(--insidePadding);
+}
+
+footer {
+  margin-top: var(--insidePadding);
+}
+
+header h1 {
+  margin: 0;
+}
