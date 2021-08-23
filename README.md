@@ -1,5 +1,13 @@
 # flax-kotahi demo
 
+This version is straight Eleventy – there's no React.
+
+Currently at https://flax-kotahi-demo.netlify.app/
+
+## needs
+
+- add webhook button?
+
 ## what this should do:
 
 - connect to Kotahi API
@@ -7,22 +15,14 @@
 - create page for each manuscript with manuscript/metadata
 - create index page listing all manuscripts
 
-## versions
-
 ## questions
 
-- What kind of templating? Just use liquid?
+- What kind of templating? Is there a strong argument for NJK over liquid?
 
 ## data model
 
-Graphql: https://www.11ty.dev/docs/data-js/
-Example using Dato: https://www.webstoemp.com/blog/headless-cms-graphql-api-eleventy/
-Rebuild this with a headless WordPress istall
+Rebuild this with a headless WordPress install
 https://www.larryhudson.io/simple-static-wordpress-eleventy/ ( https://github.com/larryhudson/personal-site-wp-11ty )
-
-## output
-
-Currently at https://flax-kotahi-demo.netlify.app/
 
 ## remember: 
 

@@ -132,6 +132,19 @@ main {
 
 header {
   margin-bottom: var(--insidePadding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: normal;
+}
+
+header a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--text);
 }
 
 footer {
@@ -140,4 +153,16 @@ footer {
 
 header h1 {
   margin: 0;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article h2 {
+  margin-top: 0;
 }
