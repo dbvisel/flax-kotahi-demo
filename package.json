@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-		"start": "npx @11ty/eleventy --serve",
-		"build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve --input=src",
+    "build": "npx @11ty/eleventy --input=src --output=_site",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Dan Visel <dbvisel@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "prettier": "^2.3.2"
   }
 }
