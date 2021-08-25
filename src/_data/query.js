@@ -1,7 +1,8 @@
 // required packages
 const axios = require("axios");
+const config = require("./../../config");
 
-const GRAPHQL_URL = `https://unpackinganarchive.dreamhosters.com/graphql`;
+const GRAPHQL_URL = config.url;
 
 const graphqlQuery = async ({ query }) => {
   const response = await axios.post(GRAPHQL_URL, {
@@ -27,10 +28,9 @@ const getData = async () => {
       }      
       `,
   });
-  console.log(data.posts.nodes.map((x) => x.slug));
-
+  // console.log(data.posts.nodes.map((x) => x.slug));
   return {
-    posts: data.posts.nodes,
+    articles: data.posts.nodes,
   };
 };
 
