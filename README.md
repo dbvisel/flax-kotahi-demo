@@ -1,14 +1,12 @@
 # flax-kotahi demo
 
-This version is straight Eleventy – there's no React.
-
-Currently at https://flax-kotahi-demo.netlify.app/
+This version is straight Eleventy – there's no React. Demo version is up at https://flax-kotahi-demo.netlify.app/ (which isn't this branch).
 
 ## localversion branch
 
-To run this as of right now, you need to have Kotahi running locally on port 3000; additionally, you need to have manuscripts in the instance. The code should work (with a change to the URL) for a remotely deployed instance (presumably Kotahi Dev), though that hasn't been tested yet.
+To run this as of right now, you need to have Kotahi running locally on port 3000; additionally, you need to have manuscripts in the instance. The code should work (with a change to the URL set in `config.js`) for a remotely deployed instance (presumably Kotahi Dev), though that hasn't been tested yet. 
 
-This is based on flax-kotahi-demo-next, the "localversion" branch.
+This is based on `flax-kotahi-demo-next`, the "localversion" branch (https://github.com/dbvisel/flax-kotahi-demo-next/tree/localversion).
 
 Kotahi puts out a GraphQL playground at http://localhost:3000/graphql – making queries there is the best way to get a sense of the shape of the data.
 
@@ -94,27 +92,16 @@ One note: the manuscript's `submission` field comes in as a string, though it's 
 
 This version does not have /method/ and /package/ pages as the Next version does, though implementing them would be pretty trivial – those were just demonstrations, and I don't think they're actually useful with real data.
 
-## needs
+And a general note: metadata can vary wildly between Kotahi instances! Much of what you want, for example, is coming from the `submission` field, which is shaped differently from instance to instance. This is based on the Aperture instance. 
 
-- add webhook button?
-
-## what this should do:
+## what this does:
 
 - connect to Kotahi API
 - pull down manuscripts from Kotahi API
 - create page for each manuscript with manuscript/metadata
 - create index page listing all manuscripts
 
-## questions
-
-- What kind of templating? Is there a strong argument for NJK over liquid?
-
-## data model
-
-Rebuild this with a headless WordPress install
-https://www.larryhudson.io/simple-static-wordpress-eleventy/ ( https://github.com/larryhudson/personal-site-wp-11ty )
-
-## remember: 
+## remember (models, etc.): 
 
 https://www.biorxiv.org/content/10.1101/2020.02.06.936302v5.full
 https://elife.kotahi.cloud
