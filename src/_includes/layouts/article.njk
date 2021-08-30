@@ -1,12 +1,23 @@
 {% extends 'layouts/_base.njk' %}
 {% set currentPage = article %}
-{% set title = article.title %}
+{% set title = article.meta.title %}
 
 {% block content %}
 <article>
 	<h2>{{article.title}}</h2>
+	<div class="metadata">
+	<h3>About this paper</h3>
+	<ul>
+	  <li>Author: {{article.parsedSubmission.name}}</li>
+		<li>Published: {{article.publishedDate}}</li>
+		<li>Filename: {{article.files[0].filename}}</li>
+		<li>Short ID: {{article.shortId}}</li>
+		<li>Methods: {{article.parsedSubmission.methods}}</li>
+		<li>Packages: {{article.parsedSubmission.packages}}</li>
+	</ul>
+	</div>
 	<div class="cms-content">
-		{{article.content|safe}}
+		{{article.meta.source|safe}}
 	</div>
 </article>
 {% endblock %}

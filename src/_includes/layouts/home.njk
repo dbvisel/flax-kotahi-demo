@@ -5,8 +5,8 @@
 <article>
 <h2>Articles in the index:</h2>
 <ul>
-{% for post in query.articles %}
-<li><a href="/article/{{post.slug}}/">{{post.title}}</a></li>
+{% for article in articleQuery.articles %}
+<li><a href="/article/{{article.shortId}}/">{{article.meta.title}}</a></li>
 {% endfor %}
 </ul>
 </article>

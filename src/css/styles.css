@@ -174,3 +174,12 @@ article {
 article h2 {
   margin-top: 0;
 }
+
+article .metadata {
+  border: 1px solid var(--black);
+  padding: var(--insidePadding);
+}
+
+article .metadata h3 {
+  margin: 0;
+}

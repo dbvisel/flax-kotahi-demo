@@ -1,6 +1,5 @@
 const config = {
-  useWordPressUrl: true,
-  url: "https://unpackinganarchive.dreamhosters.com/graphql",
+  url: "http://localhost:3000/graphql",
   webhook: "",
 };
 
