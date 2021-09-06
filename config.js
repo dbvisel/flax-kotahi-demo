@@ -1,5 +1,5 @@
 const config = {
-  url: "http://localhost:3000/graphql",
+  url: "http://kotahidev.cloud68.co/graphql",
   webhook: "",
 };
 
